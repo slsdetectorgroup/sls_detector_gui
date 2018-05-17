@@ -16,13 +16,14 @@ build:
   number: 0
   rpaths:
     - lib/
-    - lib/R/lib/
+    # - lib/R/lib/
 
 requirements:
   build:
     - cmake
     # - qwt 6.1.2
-    - libpng 
+    # - libpng 
+    - libpng
     - pyzmq
     - zlib
     - {{ compiler('c') }}        # [not win]
@@ -37,7 +38,7 @@ requirements:
     - {{ cdt('mesa-dri-drivers') }}      # [linux]
     # - {{ cdt('libxau-devel') }}          # [linux]
     # - {{ cdt('libdrm-devel') }}          # [linux]
-    - {{ cdt('libpng-devel') }}          # [linux]
+    # - {{ cdt('libpng-devel') }}          # [linux]
     # - {{ cdt('libxcomposite-devel') }}   # [linux]
     # - {{ cdt('libxcursor-devel') }}      # [linux]
     # - {{ cdt('libxi-devel') }}           # [linux]
@@ -66,9 +67,7 @@ requirements:
     - libpng
     - libstdcxx-ng
     - libgcc-ng
-    # - pyzmq
-    # - qwt 6.*
-    # - qt 4.* 
+    - pyzmq
     - sls_detector_lib developer
 
 about:

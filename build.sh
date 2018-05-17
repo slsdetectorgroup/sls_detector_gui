@@ -9,7 +9,11 @@
 mkdir build
 cd build
 echo $PREFIX
+echo "------------- prefix----------"
+echo $CONDA_PREFIX
+
 cmake .. \
+      -DCMAKE_PREFIX_PATH=$CONDA_PREFIX \
       -DCMAKE_INSTALL_PREFIX=$PREFIX \
       -DUSE_TEXTCLIENT=OFF \
       -DUSE_RECEIVER=OFF \
