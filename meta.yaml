@@ -37,7 +37,7 @@ requirements:
     - {{ cdt('mesa-dri-drivers') }}      # [linux]
     # - {{ cdt('libxau-devel') }}          # [linux]
     # - {{ cdt('libdrm-devel') }}          # [linux]
-    # - {{ cdt('libpng-devel') }}          # [linux]
+    - {{ cdt('libpng-devel') }}          # [linux]
     # - {{ cdt('libxcomposite-devel') }}   # [linux]
     # - {{ cdt('libxcursor-devel') }}      # [linux]
     # - {{ cdt('libxi-devel') }}           # [linux]
@@ -49,13 +49,14 @@ requirements:
     - {{ cdt('libxfixes') }}             # [linux]
     - {{ cdt('libxxf86vm') }}            # [linux]
     - sls_detector_lib developer
+
   host:
     - zlib
     - libxcb
     - libpng
     - xorg-libsm
     - xorg-libice
-    - sls_detector_lib
+    - sls_detector_lib developer
     - qwt 6.*
     - qt 4.*
 
