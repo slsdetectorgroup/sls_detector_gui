@@ -1,9 +1,9 @@
 diff --git a/slsDetectorGui/CMakeLists.txt b/slsDetectorGui/CMakeLists.txt
-index 55c68ca6..2c6efe55 100644
+index bad299e1..3c980dfb 100644
 --- a/slsDetectorGui/CMakeLists.txt
 +++ b/slsDetectorGui/CMakeLists.txt
-@@ -112,7 +112,8 @@ set_target_properties(zmq PROPERTIES
- )
+@@ -107,7 +107,8 @@ set_target_properties(slsDetectorGui PROPERTIES
+ 
  
  target_link_libraries(slsDetectorGui 
 -    slsDetectorShared

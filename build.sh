@@ -18,7 +18,7 @@ cmake .. \
       -DUSE_TEXTCLIENT=OFF \
       -DUSE_RECEIVER=OFF \
       -DUSE_GUI=ON \
-      -DCMAKE_BUILD_TYPE=Debug \
+      -DCMAKE_BUILD_TYPE=Release \
       -DUSE_HDF5=OFF\
      
 
