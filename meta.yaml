@@ -19,21 +19,21 @@ requirements:
   build:
     - cmake
     - gcc 
-    - libgcc
+    - libstdcxx-ng
+    - libgcc-ng
     - qwt 6.*
     - qt 4.8.7
     - libpng >=1.6.32,<1.6.35
     - pyzmq
-    # - zlib
     - sls_detector_lib developer
 
 
   run:
     - qwt 6.*
     - qt 4.8.7
-    - libgcc
+    - libstdcxx-ng
+    - libgcc-ng
     - libpng >=1.6.32,<1.6.35
-
     - pyzmq
     - sls_detector_lib developer
 
