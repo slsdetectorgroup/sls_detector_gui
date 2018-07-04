@@ -1,10 +1,10 @@
 package:
   name: sls_detector_gui
-  version: "developer"
+  version: 3.2.0rc
 
 
 source:
-   git_rev: developer
+   git_rev: 3.2.0-rc
    git_url: https://github.com/slsdetectorgroup/slsDetectorPackage.git
    patches:
     - 00-linking-of-SlsDetector.patch
@@ -25,7 +25,7 @@ requirements:
     - qt 4.8.7
     - libpng >=1.6.32,<1.6.35
     - pyzmq
-    - sls_detector_lib developer
+    - sls_detector_lib 3.2.0rc
 
 
   run:
@@ -35,7 +35,7 @@ requirements:
     - libgcc-ng
     - libpng >=1.6.32,<1.6.35
     - pyzmq
-    - sls_detector_lib developer
+    - sls_detector_lib 3.2.0rc
 
 about:
   home: no
