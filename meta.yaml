@@ -1,6 +1,6 @@
 package:
   name: sls_detector_gui
-  version: "developer"
+  version: "compiler"
 
 
 source:
@@ -17,25 +17,25 @@ build:
 
 requirements:
   build:
+    - {{compiler('c')}}
     - cmake
-    - gcc 
     - libstdcxx-ng
     - libgcc-ng
     - qwt 6.*
-    - qt 4.8.7
+    - qt 4.8.*
     - libpng >=1.6.32,<1.6.35
     - pyzmq
-    - sls_detector_lib developer
+    - sls_detector_lib compiler
 
 
   run:
     - qwt 6.*
-    - qt 4.8.7
+    - qt 4.8.*
     - libstdcxx-ng
     - libgcc-ng
     - libpng >=1.6.32,<1.6.35
     - pyzmq
-    - sls_detector_lib developer
+    - sls_detector_lib compiler
 
 about:
   home: no
