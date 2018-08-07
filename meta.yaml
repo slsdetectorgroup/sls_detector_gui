@@ -28,6 +28,8 @@ requirements:
     - libpng >=1.6.32,<1.6.35
     - pyzmq
     - sls_detector_lib compiler
+    - pkg-config
+    - automake
     - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
     - {{ cdt('mesa-libgl-devel') }}      # [linux]
     - {{ cdt('libx11-devel') }}          # [linux]
@@ -50,11 +52,15 @@ requirements:
     - {{ cdt('libxxf86vm') }}            # [linux]
     - {{ cdt('libSM') }}            # [linux]
     - {{ cdt('libICE') }}            # [linux]
+
+
   host:
     - pyzmq
     - libpng>=1.6.32
     - qt 4.8.*
     - qwt 6.*
+    - libglu                             # [linux]
+    - libffi
 
   run:
     - qwt 6.*
