@@ -1,0 +1,23 @@
+diff --git a/slsDetectorGui/CMakeLists.txt b/slsDetectorGui/CMakeLists.txt
+index bad299e1..713305ac 100644
+--- a/slsDetectorGui/CMakeLists.txt
++++ b/slsDetectorGui/CMakeLists.txt
+@@ -105,14 +105,15 @@ set_target_properties(slsDetectorGui PROPERTIES
+     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+ )
+ 
+-
++message($ENV{CONDA_PREFIX})
+ target_link_libraries(slsDetectorGui 
+-    slsDetectorShared
++    SlsDetector -L$ENV{CONDA_PREFIX}/lib
++    SlsReceiver -L$ENV{CONDA_PREFIX}/lib
+     ${QT_QTCORE_LIBRARIES}
+     ${QT_QTGUI_LIBRARIES}
+     ${QWT_LIBRARIES}
+     pthread
+-    zmq
++    zmq -L$ENV{CONDA_PREFIX}/lib
+     rt
+     png
+     z
