@@ -24,13 +24,13 @@ You can also compile the package locally using conda-build
 
 ```bash
 #Clone source code
-git clone https://github.com/slsdetectorgroup/sls_detector_software.git
+git clone https://github.com/slsdetectorgroup/sls_detector_gui.git
 
 #Checkout the branch needed
 git checkout developer
 
 #Build and install the local version
-conda build sls_detector_software
-conda install --use-local sls_detector_software
+conda build .
+conda install --use-local sls_detector_gui
 
 ```
