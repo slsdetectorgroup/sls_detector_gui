@@ -79,7 +79,7 @@ requirements:
     - qwt 6.*
     - qt=4.8.7=7
     - libpng >=1.6.32,<1.6.35
-    - sls_detector_lib 3.1.4-rc
+    - sls_detector_lib 3.1.4rc
     - libuuid 2.32.*
     - pyzmq
     - zeromq
