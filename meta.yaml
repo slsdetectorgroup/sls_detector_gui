@@ -1,10 +1,10 @@
 package:
   name: sls_detector_gui
-  version: "developer"
+  version: 4.0.0
 
 
 source:
-   git_rev: developer
+   git_rev: 4.0.0
    git_url: https://github.com/slsdetectorgroup/slsDetectorPackage.git
 
 
